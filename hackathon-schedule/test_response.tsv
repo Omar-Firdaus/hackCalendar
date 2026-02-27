@@ -1,0 +1,5 @@
+Event ID	Event Name	Track	Date	Start Time	End Time	Location	Speaker	Description	Tags
+evt-1	Opening Ceremony	General	2024-10-25	10:00 AM	11:00 AM	Main Stage	Team	Welcome to the 2024 Hackathon!	Welcome
+evt-2	Live Coding Session	Engineering	2024-10-25	11:30 AM	1:00 PM	Room A	Jane Doe	Watch an expert build an app in real time.	Code, Live
+evt-3	Design System Workshop	Design	2024-10-25	2:00 PM	3:30 PM	Room B	John Smith	Learn Figma basics and component design.	UX, UI
+evt-4	Pitching 101	Business	2024-10-26	9:00 AM	10:30 AM	Room C	Alice M.	How to pitch your project to investors.	Pitch, Startup

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Schedule</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>Hackathon Schedule</h1>
+
+            <div id="liveBanner" class="live-banner" style="display: none;"></div>
+
+            <div class="filters">
+                <div class="search-wrapper">
+                    <input type="text" id="searchInput" placeholder="Search events or speakers...">
+                </div>
+                <div class="filter-wrapper">
+                    <select id="trackFilter">
+                        <option value="all">All Tracks</option>
+                        <!-- Track options will be injected here dynamically -->
+                    </select>
+                </div>
+            </div>
+
+            <div class="date-tabs" id="dateTabs">
+                <!-- Date tabs injected dynamically -->
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="status-container" id="statusContainer">
+            <!-- Loading or error states -->
+            <div class="loading-spinner"></div>
+            <p>Loading schedule...</p>
+        </div>
+
+        <div class="timeline" id="timeline">
+            <!-- Event cards injected dynamically based on selected date -->
+        </div>
+    </main>
+
+    <!-- Modal for Event Details -->
+    <div class="modal-overlay" id="eventModal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true">
+            <button class="modal-close" id="closeModal" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <span class="track-badge" id="modalTrack">Track</span>
+                <h2 id="modalTitle">Event Title</h2>
+                <div class="modal-meta">
+                    <span class="meta-item"><i class="icon-clock"></i> <span id="modalTime">Time</span></span>
+                    <span class="meta-item"><i class="icon-location"></i> <span
+                            id="modalLocation">Location</span></span>
+                    <span class="meta-item"><i class="icon-user"></i> <span id="modalSpeaker">Speaker</span></span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p id="modalDescription">Description goes here...</p>
+                <div class="tags-container" id="modalTags">
+                    <!-- Tags injected here -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn btn-primary" id="calendarBtn" target="_blank" rel="noopener noreferrer">
+                    Add to Google Calendar
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>

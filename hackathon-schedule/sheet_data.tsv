@@ -1,0 +1,11 @@
+Column	Header Name	the content	Example Value
+A	Event ID	Unique identifier for the event (optional, app generates one if blank)	evt-1
+B	Event Name	The title of the event (Required to render)	Opening Ceremony
+C	Track	The category/track for filtering	General
+D	Date	Formatting should be consistent (e.g. YYYY-MM-DD or MM/DD/YYYY)	2024-10-25
+E	Start Time	E.g. HH:MM AM/PM or HH:MM	10:00 AM
+F	End Time	Same format as Start Time	11:00 AM
+G	Location	Room or stage name	Main Stage
+H	Speaker	Name of the speaker(s)	Jane Doe
+I	Description	Details about the event	Welcome to the 2024 Hackathon!
+J	Tags	Comma-separated list of tags for the modal
