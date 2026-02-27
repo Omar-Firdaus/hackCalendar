@@ -29,7 +29,7 @@ export async function fetchSchedule() {
     const url = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${SHEET_RANGE}?key=${API_KEY}`;
 
     try {
-        const response = await fetch(url);
+        const response = await fetch(url, { cache: 'no-store' });
 
         if (!response.ok) {
             const errorData = await response.json();
